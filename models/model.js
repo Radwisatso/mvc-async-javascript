@@ -7,7 +7,7 @@ class Model {
             const data = await fs.readFile('./data/todos.json', 'utf-8')
             const todos = JSON.parse(data)
             const result = todos.map(todo => {
-                return new Todo(todo.id, todo['name'])
+                return new Todo(todo.id, todo['name'], todo.isFinished)
             })
             return result
         } catch (error) {
@@ -26,7 +26,7 @@ class Model {
                 newId = todos.at(-1).id + 1
             }
 
-            const newTodo = new Todo(newId, todoName)
+            const newTodo = new Todo(newId, todoName, false)
             todos.push(newTodo)
             
             // save file

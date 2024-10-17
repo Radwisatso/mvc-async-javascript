@@ -1,18 +1,17 @@
 [
   {
     "id": 1,
-    "name": "Berenang"
+    "name": "Berenang",
+    "isFinished": true
   },
   {
     "id": 2,
-    "name": "Makan Nasi Goreng"
+    "name": "Makan Nasi Goreng",
+    "isFinished": false
   },
   {
     "id": 3,
-    "name": "Berlari"
-  },
-  {
-    "id": 4,
-    "name": "Makan"
+    "name": "Minum",
+    "isFinished": false
   }
 ]
